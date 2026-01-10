@@ -1,0 +1,9 @@
+.DS_Store
+*.aux
+*.log
+*.out
+*.gz
+*.zip
+*.minted
+*.lck
+#auto_saved_files#
