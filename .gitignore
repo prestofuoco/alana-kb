@@ -1,4 +1,5 @@
 *.step
+fp-info-cache
 *.mxproject
 *.su
 *.d
