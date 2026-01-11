@@ -1,3 +1,16 @@
+*.mxproject
+*.su
+*.d
+*.o
+*.map
+*.elf
+*.bin
+*.hex
+*.list
+Debug/
+Release/
+build/
+bin/
 .DS_Store
 *.aux
 *.log
