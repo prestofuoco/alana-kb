@@ -21,4 +21,4 @@ bin/
 *.zip
 *.minted
 *.lck
-#auto_saved_files#
+*/#auto_saved_files#

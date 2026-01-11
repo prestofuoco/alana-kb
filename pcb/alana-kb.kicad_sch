@@ -575,6 +575,16 @@
 		)
 		(uuid "7414378c-d5b7-473a-9ca6-c9058dc62319")
 	)
+	(bus
+		(pts
+			(xy 195.58 66.04) (xy 203.2 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dc32e23-add0-4ad8-8fbb-263e8a44adc8")
+	)
 	(wire
 		(pts
 			(xy 134.62 83.82) (xy 142.24 83.82)
@@ -634,6 +644,16 @@
 			(type default)
 		)
 		(uuid "c7c137b0-dcb9-4690-99d7-8f50d59ea522")
+	)
+	(bus
+		(pts
+			(xy 195.58 76.2) (xy 203.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd33ae42-b265-43b5-a9cb-8eb0f69abcce")
 	)
 	(wire
 		(pts
@@ -759,7 +779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31493e8e-7b89-4180-a1d0-fe5675cdda8c")
-		(property "Reference" "U3"
+		(property "Reference" "U1"
 			(at 121.92 76.2 0)
 			(effects
 				(font
@@ -838,7 +858,7 @@
 		(instances
 			(project ""
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "U3")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -854,7 +874,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3173a948-227c-4999-b858-d34573b5b778")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR02"
 			(at 137.16 102.87 0)
 			(effects
 				(font
@@ -904,7 +924,7 @@
 		(instances
 			(project "alana-kb"
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "#PWR017")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -919,7 +939,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "343ee417-3deb-4fe2-b394-e7728b7c8029")
-		(property "Reference" "C11"
+		(property "Reference" "C2"
 			(at 143.51 87.63 0)
 			(effects
 				(font
@@ -991,7 +1011,7 @@
 		(instances
 			(project "alana-kb"
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "C11")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -1007,7 +1027,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d39e181-3a01-467b-91a4-faed9396e162")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR01"
 			(at 101.6 102.87 0)
 			(effects
 				(font
@@ -1057,7 +1077,7 @@
 		(instances
 			(project ""
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "#PWR016")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -1073,7 +1093,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82f247d4-4284-43e6-b47a-48d7fa497a19")
-		(property "Reference" "C10"
+		(property "Reference" "C1"
 			(at 100.33 87.63 0)
 			(effects
 				(font
@@ -1145,7 +1165,7 @@
 		(instances
 			(project "alana-kb"
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "C10")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -1161,7 +1181,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9d5faa1-52f2-436a-b433-a75d74a636af")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR03"
 			(at 142.24 102.87 0)
 			(effects
 				(font
@@ -1211,7 +1231,7 @@
 		(instances
 			(project "alana-kb"
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "#PWR018")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1355,7 +1375,7 @@
 	)
 	(sheet
 		(at 165.1 53.34)
-		(size 22.86 35.56)
+		(size 30.48 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1417,6 +1437,26 @@
 				(justify left)
 			)
 		)
+		(pin "C[1..17]" input
+			(at 195.58 66.04 0)
+			(uuid "1fcfe85d-8eb9-484c-a9d6-842872685e32")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "R[1..6]" output
+			(at 195.58 76.2 0)
+			(uuid "5283424a-6114-4cd4-9974-70c27048788a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "alana-kb"
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
@@ -1426,8 +1466,8 @@
 		)
 	)
 	(sheet
-		(at 129.54 114.3)
-		(size 27.94 25.4)
+		(at 203.2 53.34)
+		(size 30.48 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1442,7 +1482,7 @@
 		)
 		(uuid "97432674-3bfe-4d20-844d-8017e62713cd")
 		(property "Sheetname" "Keyboard Matrix"
-			(at 129.54 113.5884 0)
+			(at 203.2 52.6284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1451,12 +1491,32 @@
 			)
 		)
 		(property "Sheetfile" "matrix.kicad_sch"
-			(at 129.54 140.2846 0)
+			(at 203.2 89.4846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "C[1..17]" output
+			(at 203.2 66.04 180)
+			(uuid "8a94375a-7483-4f70-8736-b1365a3537e8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "R[1..6]" input
+			(at 203.2 76.2 180)
+			(uuid "d108bd7b-222f-4a90-9b89-3cc621350904")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
