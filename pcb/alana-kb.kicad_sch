@@ -5,145 +5,6 @@
 	(uuid "14664179-4b45-478a-8e33-e1eaac937d3d")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Mechanical:Fiducial"
 			(exclude_from_sim no)
 			(in_bom no)
@@ -224,37 +85,35 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "library:AP2112K-3.3TRG1"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 10.16 0)
+			(property "Reference" "H"
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "AP2112K-3.3TRG1"
-				(at 0 7.62 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 0 -22.86 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-				(at 0 -22.86 0)
+			(property "Footprint" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -262,8 +121,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "IC REG LINEAR 3.3V 600MA SOT-25"
-				(at 0 -22.86 0)
+			(property "Datasheet" "~"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -271,8 +130,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "Diodes Incorporated"
-				(at 0 -22.86 0)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -280,8 +139,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer Product Number" "AP2112K-3.3TRG1"
-				(at 0 -22.86 0)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -289,23 +148,33 @@
 					(hide yes)
 				)
 			)
-			(symbol "AP2112K-3.3TRG1_1_1"
-				(rectangle
-					(start -7.62 5.08)
-					(end 7.62 -7.62)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
 					(stroke
-						(width 0)
-						(type solid)
+						(width 1.27)
+						(type default)
 					)
 					(fill
-						(type color)
-						(color 255 255 194 1)
+						(type none)
 					)
 				)
-				(pin power_in line
-					(at -12.7 2.54 0)
-					(length 5.08)
-					(name "VIN"
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -313,78 +182,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 0 0)
-					(length 5.08)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -12.7 -5.08 0)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 12.7 2.54 180)
-					(length 5.08)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 12.7 -5.08 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -497,57 +294,20 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 142.24 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2374deda-418d-4006-a0b4-959a89317508")
-	)
-	(junction
-		(at 106.68 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "453ff8d4-4011-41af-80b2-9ab550117113")
-	)
-	(junction
-		(at 101.6 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "84525e77-6599-4e66-9a13-9da559cc0e12")
-	)
 	(wire
 		(pts
-			(xy 106.68 83.82) (xy 101.6 83.82)
+			(xy 116.84 104.14) (xy 124.46 104.14)
 		)
 		(stroke
-			(width 0)
+			(width 0.508)
 			(type default)
+			(color 255 0 0 1)
 		)
-		(uuid "008ba03f-f34b-472f-8d2d-6173b2dc9bf9")
+		(uuid "3f6415c5-5467-45d5-857c-5826defd86ae")
 	)
 	(wire
 		(pts
-			(xy 106.68 83.82) (xy 109.22 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c860cfb-45cd-4110-b8f8-5a44f255931d")
-	)
-	(wire
-		(pts
-			(xy 137.16 91.44) (xy 137.16 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "322a7243-742e-48cc-a2c8-3cc4def3498a")
-	)
-	(wire
-		(pts
-			(xy 81.28 58.42) (xy 165.1 58.42)
+			(xy 116.84 86.36) (xy 152.4 86.36)
 		)
 		(stroke
 			(width 0)
@@ -555,29 +315,9 @@
 		)
 		(uuid "3fa5c2a7-6d2d-4a97-9ed3-8d99d3f3cd6b")
 	)
-	(wire
-		(pts
-			(xy 101.6 93.98) (xy 101.6 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6cd97536-0bf5-4b01-a981-e3b1ca39bc1d")
-	)
-	(wire
-		(pts
-			(xy 101.6 83.82) (xy 101.6 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7414378c-d5b7-473a-9ca6-c9058dc62319")
-	)
 	(bus
 		(pts
-			(xy 195.58 66.04) (xy 203.2 66.04)
+			(xy 177.8 91.44) (xy 185.42 91.44)
 		)
 		(stroke
 			(width 0)
@@ -585,69 +325,9 @@
 		)
 		(uuid "7dc32e23-add0-4ad8-8fbb-263e8a44adc8")
 	)
-	(wire
-		(pts
-			(xy 134.62 83.82) (xy 142.24 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1839552-fca6-4452-ad2e-c25a182e5401")
-	)
-	(wire
-		(pts
-			(xy 142.24 93.98) (xy 142.24 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a49c65d4-be39-4f18-816c-7ddc9bcf86e0")
-	)
-	(wire
-		(pts
-			(xy 142.24 83.82) (xy 165.1 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a722c8bb-f90b-4c24-b0d3-438dfee11c4e")
-	)
-	(wire
-		(pts
-			(xy 106.68 86.36) (xy 106.68 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0d25ddb-c856-462b-90cc-44b6e8e9e21a")
-	)
-	(wire
-		(pts
-			(xy 81.28 83.82) (xy 101.6 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5a5c665-18ae-4e4f-a28d-15467933478b")
-	)
-	(wire
-		(pts
-			(xy 142.24 83.82) (xy 142.24 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7c137b0-dcb9-4690-99d7-8f50d59ea522")
-	)
 	(bus
 		(pts
-			(xy 195.58 76.2) (xy 203.2 76.2)
+			(xy 177.8 99.06) (xy 185.42 99.06)
 		)
 		(stroke
 			(width 0)
@@ -657,27 +337,18 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 91.44) (xy 137.16 91.44)
+			(xy 144.78 104.14) (xy 152.4 104.14)
 		)
 		(stroke
-			(width 0)
+			(width 0.381)
 			(type default)
+			(color 255 153 0 1)
 		)
-		(uuid "ecb92b92-db39-442a-99fb-11345e105cc5")
+		(uuid "e74c2eb3-1156-4ddb-9eb7-d19d1ed9635e")
 	)
 	(wire
 		(pts
-			(xy 109.22 86.36) (xy 106.68 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef78de56-ff37-4f53-b069-1e296f084e8a")
-	)
-	(wire
-		(pts
-			(xy 81.28 60.96) (xy 165.1 60.96)
+			(xy 116.84 88.9) (xy 152.4 88.9)
 		)
 		(stroke
 			(width 0)
@@ -685,56 +356,233 @@
 		)
 		(uuid "fa00acc5-bdea-480b-b0dd-ef31a2983366")
 	)
-	(label "5V0"
-		(at 83.82 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
+	(symbol
+		(lib_id "power:GND")
+		(at 22.86 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09de66a1-91d0-48e2-bfd5-3e91a25a6253")
+		(property "Reference" "#PWR013"
+			(at 22.86 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
-			(justify left bottom)
 		)
-		(uuid "72d11307-2097-44ca-acdf-b100b93e7efd")
-	)
-	(label "3V3"
-		(at 162.56 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(property "Value" "GND"
+			(at 22.86 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
-			(justify right bottom)
 		)
-		(uuid "d8d68bdb-db8f-4958-bb40-52d199fdd4ea")
+		(property "Footprint" ""
+			(at 22.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 22.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dcf37c70-9dda-4605-b253-b060b20326e2")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
-		(lib_id "Mechanical:Fiducial")
-		(at 30.48 172.72 0)
+		(lib_id "power:GND")
+		(at 76.2 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a3fc148-84e1-4488-9006-070fd50f668a")
+		(property "Reference" "#PWR026"
+			(at 76.2 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21175e21-9845-4ec9-afe4-f73bd549a397")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 53.34 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10caa480-c117-47fe-963f-d4e398b43310")
+		(property "Reference" "#PWR023"
+			(at 53.34 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 53.34 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b952e89-e6e2-44fc-b583-998323a542ce")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 38.1 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24b539cb-a68b-4f5a-ab8f-f6931efc223f")
-		(property "Reference" "FID1"
-			(at 33.02 171.4499 0)
+		(uuid "1da4d454-8db3-4384-9a54-aacdd158ec36")
+		(property "Reference" "MH3"
+			(at 38.1 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 40.64 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "Fiducial"
-			(at 33.02 173.9899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Fiducial:Fiducial_0.75mm_Mask1.5mm"
-			(at 30.48 172.72 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad"
+			(at 38.1 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -743,7 +591,74 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 172.72 0)
+			(at 38.1 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 38.1 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e13ad3f-ad0b-49f1-a04d-8adfbac68250")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "MH3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 93.98 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24b539cb-a68b-4f5a-ab8f-f6931efc223f")
+		(property "Reference" "FID1"
+			(at 96.52 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 96.52 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1.5mm_Mask4.5mm"
+			(at 93.98 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -752,7 +667,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 30.48 172.72 0)
+			(at 93.98 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -770,112 +685,17 @@
 		)
 	)
 	(symbol
-		(lib_id "library:AP2112K-3.3TRG1")
-		(at 121.92 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "31493e8e-7b89-4180-a1d0-fe5675cdda8c")
-		(property "Reference" "U1"
-			(at 121.92 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AP2112K-3.3TRG1"
-			(at 121.92 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 121.92 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-			(at 121.92 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "IC REG LINEAR 3.3V 600MA SOT-25"
-			(at 121.92 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 121.92 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Product Number" "AP2112K-3.3TRG1"
-			(at 121.92 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "28054db6-e215-4c1f-9b6f-c2483a69bad1")
-		)
-		(pin "2"
-			(uuid "91e7935e-4921-46e4-8d22-216b0e6a13ce")
-		)
-		(pin "1"
-			(uuid "13548352-e683-4a39-87d9-fdf46bbbe5a4")
-		)
-		(pin "3"
-			(uuid "a4c5932d-549b-48fa-8203-f4b0ffbd619a")
-		)
-		(pin "4"
-			(uuid "008acff1-9fe2-4134-8b5d-cc27d98dd7e7")
-		)
-		(instances
-			(project ""
-				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 137.16 96.52 0)
+		(at 68.58 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3173a948-227c-4999-b858-d34573b5b778")
-		(property "Reference" "#PWR02"
-			(at 137.16 102.87 0)
+		(uuid "3440c9ee-5496-4263-8bec-e4e8935ca6fd")
+		(property "Reference" "#PWR025"
+			(at 68.58 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -884,7 +704,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 101.6 0)
+			(at 68.58 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -892,7 +712,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 96.52 0)
+			(at 68.58 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -901,7 +721,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 96.52 0)
+			(at 68.58 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -910,7 +730,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 96.52 0)
+			(at 68.58 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -919,46 +739,46 @@
 			)
 		)
 		(pin "1"
-			(uuid "a0dfd1c2-b6e2-46ba-9f1a-ddceba809480")
+			(uuid "25cba25e-9c80-4b92-8ffd-b9299c08d975")
 		)
 		(instances
 			(project "alana-kb"
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "#PWR02")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 142.24 90.17 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 60.96 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "343ee417-3deb-4fe2-b394-e7728b7c8029")
-		(property "Reference" "C2"
-			(at 143.51 87.63 0)
+		(uuid "5b2b3f47-f255-49b6-b677-57a637cd55be")
+		(property "Reference" "MH6"
+			(at 60.96 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 63.5 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "1uF"
-			(at 143.51 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 143.2052 93.98 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad"
+			(at 60.96 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -967,7 +787,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 90.17 0)
+			(at 60.96 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -975,43 +795,22 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 1UF 6.3V X5R 0402"
-			(at 142.24 90.17 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 60.96 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Manufacturer" "KEMET"
-			(at 142.24 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Product Number" "C0402C105K9PACTU"
-			(at 142.24 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "90497796-6cfe-4294-a46f-873ed2eb1902")
 		)
 		(pin "1"
-			(uuid "469147a6-cdd5-458b-a236-67e159960678")
+			(uuid "6d60db00-b2ed-48b2-b100-cbd4cd24751d")
 		)
 		(instances
 			(project "alana-kb"
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "C2")
+					(reference "MH6")
 					(unit 1)
 				)
 			)
@@ -1019,16 +818,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 101.6 96.52 0)
+		(at 83.82 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5d39e181-3a01-467b-91a4-faed9396e162")
-		(property "Reference" "#PWR01"
-			(at 101.6 102.87 0)
+		(uuid "64d0a985-c894-4b93-81e8-ba20de778361")
+		(property "Reference" "#PWR027"
+			(at 83.82 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1037,7 +836,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 101.6 101.6 0)
+			(at 83.82 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1045,7 +844,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 96.52 0)
+			(at 83.82 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1054,7 +853,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 96.52 0)
+			(at 83.82 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1063,7 +862,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 101.6 96.52 0)
+			(at 83.82 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1072,47 +871,46 @@
 			)
 		)
 		(pin "1"
-			(uuid "5b52263f-f984-41b4-bf8c-7657801e18f0")
+			(uuid "0e5f819a-a585-4bfd-97de-8bb10757411a")
 		)
 		(instances
-			(project ""
+			(project "alana-kb"
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "#PWR01")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 101.6 90.17 0)
-		(mirror y)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 45.72 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "82f247d4-4284-43e6-b47a-48d7fa497a19")
-		(property "Reference" "C1"
-			(at 100.33 87.63 0)
+		(uuid "6d236b0f-3fc7-4527-afed-cd4dfec960e9")
+		(property "Reference" "MH4"
+			(at 45.72 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 48.26 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "1uF"
-			(at 100.33 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 100.6348 93.98 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad"
+			(at 45.72 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1121,7 +919,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 90.17 0)
+			(at 45.72 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1129,43 +927,154 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 1UF 6.3V X5R 0402"
-			(at 101.6 90.17 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 45.72 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Manufacturer" "KEMET"
-			(at 101.6 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Product Number" "C0402C105K9PACTU"
-			(at 101.6 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c3c39930-ebd9-4808-9470-7134ac00ea8f")
 		)
 		(pin "1"
-			(uuid "cbcf7a2f-2ab8-4176-b2ca-4030930079ab")
+			(uuid "40fb7875-3897-413f-8632-fc0a8d58e21f")
 		)
 		(instances
 			(project "alana-kb"
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "C1")
+					(reference "MH4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 76.2 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "78849369-f976-46c2-a03f-1fc0d5f278f8")
+		(property "Reference" "MH8"
+			(at 76.2 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 78.74 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad"
+			(at 76.2 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 76.2 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3687cf52-585e-40d0-ad72-ffee3392ead8")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "MH8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 22.86 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e609c9c-e8ae-455a-82f5-f1ad009730a3")
+		(property "Reference" "MH1"
+			(at 22.86 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 25.4 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad"
+			(at 22.86 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 22.86 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fecc046f-339b-498c-ba35-6c3553b8b61a")
+		)
+		(instances
+			(project ""
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "MH1")
 					(unit 1)
 				)
 			)
@@ -1173,16 +1082,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 96.52 0)
+		(at 60.96 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c9d5faa1-52f2-436a-b433-a75d74a636af")
-		(property "Reference" "#PWR03"
-			(at 142.24 102.87 0)
+		(uuid "9373981d-8faa-41fa-91d5-98005162bffd")
+		(property "Reference" "#PWR024"
+			(at 60.96 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1191,7 +1100,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 101.6 0)
+			(at 60.96 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1199,7 +1108,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 96.52 0)
+			(at 60.96 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1208,7 +1117,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 96.52 0)
+			(at 60.96 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1217,7 +1126,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 96.52 0)
+			(at 60.96 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1226,12 +1135,276 @@
 			)
 		)
 		(pin "1"
-			(uuid "630bd153-2039-44b7-a495-71dbd6170846")
+			(uuid "0d88c916-4d26-4334-818b-2ba5b2309cdf")
 		)
 		(instances
 			(project "alana-kb"
 				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
-					(reference "#PWR03")
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 53.34 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "9dc60810-b46c-4f09-90b8-f9fa37594460")
+		(property "Reference" "MH5"
+			(at 53.34 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 55.88 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad"
+			(at 53.34 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 53.34 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e1a3239-8570-45b7-aaad-ad71d774cf4d")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "MH5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 68.58 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "abe3c242-9ff2-465d-ba2e-5e1818ac3473")
+		(property "Reference" "MH7"
+			(at 68.58 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 71.12 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad"
+			(at 68.58 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 68.58 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8146335e-2fd4-43eb-a68f-265a4dcba423")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "MH7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba8000de-414e-4ece-bdf5-5107b54fc1dd")
+		(property "Reference" "#PWR021"
+			(at 38.1 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0039ea07-755c-4e40-8b0d-83f3c67c20bf")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8fc84bf-d4b0-4b28-b712-21946cc22033")
+		(property "Reference" "#PWR014"
+			(at 30.48 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae8ca6dd-eda7-4dde-86fc-c219847f51c9")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -1239,7 +1412,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 30.48 180.34 0)
+		(at 93.98 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1248,7 +1421,7 @@
 		(fields_autoplaced yes)
 		(uuid "cfa76f39-7131-47bd-b60e-33af829782dc")
 		(property "Reference" "FID2"
-			(at 33.02 179.0699 0)
+			(at 96.52 186.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1257,7 +1430,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 33.02 181.6099 0)
+			(at 96.52 189.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1265,8 +1438,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Fiducial:Fiducial_0.75mm_Mask1.5mm"
-			(at 30.48 180.34 0)
+		(property "Footprint" "Fiducial:Fiducial_1.5mm_Mask4.5mm"
+			(at 93.98 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1275,7 +1448,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 180.34 0)
+			(at 93.98 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1284,7 +1457,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 30.48 180.34 0)
+			(at 93.98 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1301,9 +1474,207 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 30.48 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4a02a2e-91ad-4869-8c4a-08bd9ed83f60")
+		(property "Reference" "MH2"
+			(at 30.48 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 33.02 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad"
+			(at 30.48 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 30.48 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "638d2161-235f-4edd-9a34-5cd631127315")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "MH2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e200bfa8-7008-4574-af52-3950dff72481")
+		(property "Reference" "#PWR022"
+			(at 45.72 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c4e8a42-6ee9-49cd-b1f5-a8a6d9374963")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 83.82 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f1a6e935-6a72-451c-a558-eea09c8ec4fa")
+		(property "Reference" "MH9"
+			(at 83.82 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 86.36 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad"
+			(at 83.82 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 83.82 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83eba21f-8772-44ef-99ff-a071613dde3b")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(reference "MH9")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 60.96 53.34)
-		(size 20.32 35.56)
+		(at 96.52 81.28)
+		(size 20.32 27.94)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1314,11 +1685,11 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 132 0 132 0.0400)
 		)
 		(uuid "2255f5ec-0f5b-4119-872e-88e5f6171d9e")
 		(property "Sheetname" "USB C"
-			(at 60.96 52.6284 0)
+			(at 96.52 80.5684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1327,7 +1698,7 @@
 			)
 		)
 		(property "Sheetfile" "usb.kicad_sch"
-			(at 60.96 89.4846 0)
+			(at 96.52 109.8046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1336,7 +1707,7 @@
 			)
 		)
 		(pin "5V0" output
-			(at 81.28 83.82 0)
+			(at 116.84 104.14 0)
 			(uuid "e286e4c1-7384-4f42-a621-bb0c492c3b8c")
 			(effects
 				(font
@@ -1346,7 +1717,7 @@
 			)
 		)
 		(pin "MCU_D_N" bidirectional
-			(at 81.28 60.96 0)
+			(at 116.84 88.9 0)
 			(uuid "eb8869d3-a71a-4863-bfc5-814079e578f3")
 			(effects
 				(font
@@ -1356,7 +1727,7 @@
 			)
 		)
 		(pin "MCU_D_P" bidirectional
-			(at 81.28 58.42 0)
+			(at 116.84 86.36 0)
 			(uuid "b5cce738-f93e-4fe7-b8bc-7310fea0331f")
 			(effects
 				(font
@@ -1374,8 +1745,8 @@
 		)
 	)
 	(sheet
-		(at 165.1 53.34)
-		(size 30.48 35.56)
+		(at 152.4 81.28)
+		(size 25.4 27.94)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1386,11 +1757,11 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 132 0 0.0500)
 		)
 		(uuid "56ff7ee6-662a-45e6-a488-b9279dcd3e60")
 		(property "Sheetname" "STM32"
-			(at 165.1 52.6284 0)
+			(at 152.4 80.5684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1399,7 +1770,7 @@
 			)
 		)
 		(property "Sheetfile" "stm32.kicad_sch"
-			(at 165.1 89.4846 0)
+			(at 152.4 109.8046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1408,7 +1779,7 @@
 			)
 		)
 		(pin "3V3" input
-			(at 165.1 83.82 180)
+			(at 152.4 104.14 180)
 			(uuid "ddc43f0f-2381-407a-b206-ec0dd00a6110")
 			(effects
 				(font
@@ -1418,7 +1789,7 @@
 			)
 		)
 		(pin "MCU_D_N" bidirectional
-			(at 165.1 60.96 180)
+			(at 152.4 88.9 180)
 			(uuid "1966d12a-a195-4acc-88ab-b60c8660b090")
 			(effects
 				(font
@@ -1428,7 +1799,7 @@
 			)
 		)
 		(pin "MCU_D_P" bidirectional
-			(at 165.1 58.42 180)
+			(at 152.4 86.36 180)
 			(uuid "695ba038-ec01-45af-ad5e-517f604ec6d2")
 			(effects
 				(font
@@ -1438,7 +1809,7 @@
 			)
 		)
 		(pin "C[1..17]" input
-			(at 195.58 66.04 0)
+			(at 177.8 91.44 0)
 			(uuid "1fcfe85d-8eb9-484c-a9d6-842872685e32")
 			(effects
 				(font
@@ -1448,7 +1819,7 @@
 			)
 		)
 		(pin "R[1..6]" output
-			(at 195.58 76.2 0)
+			(at 177.8 99.06 0)
 			(uuid "5283424a-6114-4cd4-9974-70c27048788a")
 			(effects
 				(font
@@ -1466,8 +1837,8 @@
 		)
 	)
 	(sheet
-		(at 203.2 53.34)
-		(size 30.48 35.56)
+		(at 124.46 99.06)
+		(size 20.32 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1478,11 +1849,73 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 0 0 0.0700)
+		)
+		(uuid "96859603-4c32-4ca9-b82b-a4f6e1901b5d")
+		(property "Sheetname" "Power Supply"
+			(at 124.46 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 124.46 109.8046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3V3" output
+			(at 144.78 104.14 0)
+			(uuid "85320d0e-d1b5-4a2b-9ef9-63ca40ce95ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "5V0" input
+			(at 124.46 104.14 180)
+			(uuid "14a36fbe-c083-491f-abb9-1e89c7fb2249")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 185.42 81.28)
+		(size 15.24 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 194 194 0 0.0600)
 		)
 		(uuid "97432674-3bfe-4d20-844d-8017e62713cd")
 		(property "Sheetname" "Keyboard Matrix"
-			(at 203.2 52.6284 0)
+			(at 185.42 80.5684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1491,7 +1924,7 @@
 			)
 		)
 		(property "Sheetfile" "matrix.kicad_sch"
-			(at 203.2 89.4846 0)
+			(at 185.42 109.8046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1500,7 +1933,7 @@
 			)
 		)
 		(pin "C[1..17]" output
-			(at 203.2 66.04 180)
+			(at 185.42 91.44 180)
 			(uuid "8a94375a-7483-4f70-8736-b1365a3537e8")
 			(effects
 				(font
@@ -1510,7 +1943,7 @@
 			)
 		)
 		(pin "R[1..6]" input
-			(at 203.2 76.2 180)
+			(at 185.42 99.06 180)
 			(uuid "d108bd7b-222f-4a90-9b89-3cc621350904")
 			(effects
 				(font
