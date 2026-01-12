@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "4544f3ba-f56f-4db0-a2e7-a31852761f9b")
 	(paper "A4")
+	(title_block
+		(title "ALANA-KB PCB")
+		(date "2026-01-11")
+		(rev "A")
+		(company "ASE, ASW, AMB")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x06_Pin"
 			(pin_names
@@ -332,6 +338,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:FerriteBead"
 			(pin_numbers
 				(hide yes)
@@ -593,21 +738,41 @@
 		)
 		(uuid "62746536-e9a6-4a00-ba1e-4a148b7e6d66")
 	)
+	(text "CONNECTORS [UDB for USB]"
+		(exclude_from_sim no)
+		(at 15.24 17.78 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "6de71101-766e-46c0-8d0c-bd3c6018a41d")
+	)
 	(junction
-		(at 127 109.22)
+		(at 177.8 83.82)
+		(diameter 0)
+		(color 255 0 0 1)
+		(uuid "00056159-4908-4721-a1f7-a706cb55e761")
+	)
+	(junction
+		(at 109.22 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27a8543c-693b-4fbb-964b-04e62aa12499")
 	)
 	(junction
-		(at 127 106.68)
+		(at 109.22 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56c116be-d5d3-4b85-959d-5aefeddee3e1")
 	)
 	(wire
 		(pts
-			(xy 147.32 83.82) (xy 152.4 83.82)
+			(xy 129.54 83.82) (xy 134.62 83.82)
 		)
 		(stroke
 			(width 0.508)
@@ -618,7 +783,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 109.22) (xy 127 111.76)
+			(xy 109.22 109.22) (xy 109.22 111.76)
 		)
 		(stroke
 			(width 0)
@@ -628,7 +793,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 96.52) (xy 124.46 96.52)
+			(xy 129.54 96.52) (xy 106.68 96.52)
 		)
 		(stroke
 			(width 0.508)
@@ -639,7 +804,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 106.68) (xy 124.46 106.68)
+			(xy 109.22 106.68) (xy 106.68 106.68)
 		)
 		(stroke
 			(width 0)
@@ -649,7 +814,18 @@
 	)
 	(wire
 		(pts
-			(xy 127 104.14) (xy 127 106.68)
+			(xy 177.8 83.82) (xy 177.8 86.36)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "60237276-bb9d-451d-9059-ba331301a83b")
+	)
+	(wire
+		(pts
+			(xy 109.22 104.14) (xy 109.22 106.68)
 		)
 		(stroke
 			(width 0)
@@ -659,7 +835,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 109.22) (xy 124.46 109.22)
+			(xy 109.22 109.22) (xy 106.68 109.22)
 		)
 		(stroke
 			(width 0)
@@ -669,7 +845,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 101.6) (xy 172.72 101.6)
+			(xy 106.68 101.6) (xy 154.94 101.6)
 		)
 		(stroke
 			(width 0)
@@ -679,7 +855,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 83.82) (xy 147.32 96.52)
+			(xy 129.54 83.82) (xy 129.54 96.52)
 		)
 		(stroke
 			(width 0.508)
@@ -690,7 +866,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 106.68) (xy 127 109.22)
+			(xy 109.22 106.68) (xy 109.22 109.22)
 		)
 		(stroke
 			(width 0)
@@ -700,7 +876,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 104.14) (xy 124.46 104.14)
+			(xy 109.22 104.14) (xy 106.68 104.14)
 		)
 		(stroke
 			(width 0)
@@ -710,7 +886,17 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 83.82) (xy 172.72 83.82)
+			(xy 177.8 93.98) (xy 177.8 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2888fff-728c-47c9-b245-60b2dbfea2f5")
+	)
+	(wire
+		(pts
+			(xy 142.24 83.82) (xy 177.8 83.82)
 		)
 		(stroke
 			(width 0.508)
@@ -721,7 +907,18 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 99.06) (xy 172.72 99.06)
+			(xy 177.8 83.82) (xy 195.58 83.82)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "f421d63a-f58f-4ce0-a779-97606014f45b")
+	)
+	(wire
+		(pts
+			(xy 106.68 99.06) (xy 154.94 99.06)
 		)
 		(stroke
 			(width 0)
@@ -730,7 +927,7 @@
 		(uuid "f7f9667a-50b7-423b-becb-72004a583798")
 	)
 	(label "MCU_D_N"
-		(at 170.18 99.06 180)
+		(at 152.4 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -740,7 +937,7 @@
 		(uuid "1504dff2-3a9d-4af9-8f65-eb865cd71713")
 	)
 	(label "VBUS"
-		(at 127 96.52 0)
+		(at 109.22 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -750,7 +947,7 @@
 		(uuid "521a19c4-3b40-46b5-95c6-7c5044be2a49")
 	)
 	(label "5V0"
-		(at 170.18 83.82 180)
+		(at 193.04 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -760,7 +957,7 @@
 		(uuid "9cff9949-341c-4540-8801-ba7950090ace")
 	)
 	(label "MCU_D_P"
-		(at 170.18 101.6 180)
+		(at 152.4 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -771,7 +968,7 @@
 	)
 	(hierarchical_label "MCU_D_P"
 		(shape bidirectional)
-		(at 172.72 101.6 0)
+		(at 154.94 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -782,7 +979,7 @@
 	)
 	(hierarchical_label "MCU_D_N"
 		(shape bidirectional)
-		(at 172.72 99.06 0)
+		(at 154.94 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -793,7 +990,7 @@
 	)
 	(hierarchical_label "5V0"
 		(shape output)
-		(at 172.72 83.82 0)
+		(at 195.58 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -805,7 +1002,7 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 160.02 93.98) (xy 160.02 106.68) (xy 185.42 106.68) (xy 185.42 93.98)
+				(xy 142.24 93.98) (xy 142.24 106.68) (xy 167.64 106.68) (xy 167.64 93.98)
 			)
 			(stroke
 				(width 0)
@@ -820,7 +1017,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 162.56 93.98 0)
+		(at 144.78 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -830,7 +1027,7 @@
 		)
 		(uuid "aa324c03-a97e-4de2-b06a-4b76306e886b")
 		(property "Netclass" "90DIFF"
-			(at 163.2585 91.44 0)
+			(at 145.4785 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -839,7 +1036,7 @@
 			)
 		)
 		(property "Component Class" "Controlled Impedance"
-			(at 163.2585 92.9005 0)
+			(at 145.4785 92.9005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -850,8 +1047,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 177.8 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e50a24c-44d7-4127-b882-e70993f5db6c")
+		(property "Reference" "#PWR012"
+			(at 177.8 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3eda5f6-bd46-474c-847c-ad5ade1fe720")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d/2255f5ec-0f5b-4119-872e-88e5f6171d9e"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x06_Pin")
-		(at 119.38 101.6 0)
+		(at 101.6 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -859,7 +1122,7 @@
 		(dnp no)
 		(uuid "1f5ba728-468e-468a-8bd0-2e30438c7b2d")
 		(property "Reference" "J4"
-			(at 119.38 90.17 0)
+			(at 101.6 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -867,7 +1130,7 @@
 			)
 		)
 		(property "Value" "0781710004"
-			(at 119.38 92.71 0)
+			(at 101.6 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -875,7 +1138,7 @@
 			)
 		)
 		(property "Footprint" "library:CONN_781710000-SD_04_MOL"
-			(at 119.38 101.6 0)
+			(at 101.6 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -884,7 +1147,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/781710004?display=pdf"
-			(at 119.38 101.6 0)
+			(at 101.6 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -893,7 +1156,7 @@
 			)
 		)
 		(property "Description" "CONN HEADER SMD 4POS 1.2MM"
-			(at 119.38 101.6 0)
+			(at 101.6 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -902,7 +1165,7 @@
 			)
 		)
 		(property "Manufacturer" "Molex"
-			(at 119.38 101.6 0)
+			(at 101.6 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -911,7 +1174,7 @@
 			)
 		)
 		(property "Manufacturer Product Number" "0781710004"
-			(at 119.38 101.6 0)
+			(at 101.6 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -948,7 +1211,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 111.76 0)
+		(at 109.22 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -957,7 +1220,7 @@
 		(fields_autoplaced yes)
 		(uuid "73678306-e882-47f8-a0a6-d5a8bb9bf758")
 		(property "Reference" "#PWR016"
-			(at 127 118.11 0)
+			(at 109.22 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -966,7 +1229,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 116.84 0)
+			(at 109.22 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -974,7 +1237,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 111.76 0)
+			(at 109.22 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -983,7 +1246,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 111.76 0)
+			(at 109.22 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -992,7 +1255,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 111.76 0)
+			(at 109.22 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1013,8 +1276,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 177.8 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f82cb8b-5279-4b4c-bf0d-90f59f71234d")
+		(property "Reference" "C10"
+			(at 181.61 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 181.61 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 178.7652 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 10UF 10V X5R 0805"
+			(at 177.8 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 177.8 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number" "C0805C106K8PACTU"
+			(at 177.8 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0c57103c-461e-4601-98df-eedfff374afe")
+		)
+		(pin "1"
+			(uuid "e819b99f-ab86-4c97-91ab-743b2dfd2d78")
+		)
+		(instances
+			(project "alana-kb"
+				(path "/14664179-4b45-478a-8e33-e1eaac937d3d/2255f5ec-0f5b-4119-872e-88e5f6171d9e"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:FerriteBead")
-		(at 156.21 83.82 270)
+		(at 138.43 83.82 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1024,7 +1375,7 @@
 		(fields_autoplaced yes)
 		(uuid "c7b2aa6f-9093-4baf-86b3-68812ba52cce")
 		(property "Reference" "FB2"
-			(at 156.2608 76.2 90)
+			(at 138.4808 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1032,7 +1383,7 @@
 			)
 		)
 		(property "Value" "120R @ 100MHz"
-			(at 156.2608 78.74 90)
+			(at 138.4808 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1040,7 +1391,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 156.21 85.598 90)
+			(at 138.43 85.598 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1049,7 +1400,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 83.82 0)
+			(at 138.43 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1058,7 +1409,7 @@
 			)
 		)
 		(property "Description" "FERRITE BEAD 120 OHM 0603 1LN"
-			(at 156.21 83.82 0)
+			(at 138.43 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1067,7 +1418,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 156.21 83.82 90)
+			(at 138.43 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1076,7 +1427,7 @@
 			)
 		)
 		(property "Manufacturer Product Number" "BLM18PG121SN1D"
-			(at 156.21 83.82 90)
+			(at 138.43 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)

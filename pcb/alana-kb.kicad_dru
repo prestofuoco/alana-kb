@@ -1,0 +1,125 @@
+(version 1)
+# Custom Design Rules (DRC) for KiCad 7.0+
+# Version 2 - Updated for JLCPCB Slots & NPTH Safety
+#
+# Matching JLCPCB capabilities: https://jlcpcb.com/capabilities/pcb-capabilities
+
+# -----------------------------------------------------------------------------
+# 1. TRACE WIDTH & SPACING
+# -----------------------------------------------------------------------------
+
+# Outer Layers: Keep to 0.127mm (5 mil) for robustness where possible
+(rule "Track width, outer layer"
+    (layer outer)
+    (condition "A.Type == 'track'")
+    (constraint track_width (min 0.127mm))
+)
+
+(rule "Track spacing, outer layer"
+    (layer outer)
+    (condition "A.Type == 'track' && B.Type == 'track'")
+    (constraint clearance (min 0.127mm))
+)
+
+# Inner Layers: Allow down to 0.09mm (3.5 mil) for BGA escape/density
+(rule "Track width, inner layer"
+    (layer inner)
+    (condition "A.Type == 'track'")
+    (constraint track_width (min 0.09mm))
+)
+
+(rule "Track spacing, inner layer"
+    (layer inner)
+    (condition "A.Type == 'track' && B.Type == 'track'")
+    (constraint clearance (min 0.09mm))
+)
+
+# -----------------------------------------------------------------------------
+# 2. SILKSCREEN & MECHANICAL
+# -----------------------------------------------------------------------------
+
+(rule "Silkscreen text size"
+    (layer "?.Silkscreen")
+    (condition "A.Type == 'Text' || A.Type == 'Text Box'")
+    (constraint text_thickness (min 0.15mm))
+    (constraint text_height (min 1.0mm))
+)
+
+(rule "Pad to Silkscreen overlap"
+    (layer outer)
+    (condition "A.Type == 'pad' && B.Layer == '?.Silkscreen'")
+    (constraint silk_clearance (min 0.15mm))
+)
+
+(rule "Copper to Board Edge"
+    (layer outer)
+    (condition "A.Type == 'track' || A.Type == 'pad' || A.Type == 'via'")
+    (constraint edge_clearance (min 0.3mm))
+)
+
+# -----------------------------------------------------------------------------
+# 3. HOLES, VIAS & SLOTS (Implemented TODOs)
+# -----------------------------------------------------------------------------
+
+# General Drill Size Limits
+(rule "Hole diameter limits"
+    (constraint hole_size (min 0.2mm) (max 6.3mm))
+)
+
+# Plated Slot (Oval Hole) Minimum Width -> 0.5mm
+# JLCPCB: "The minimum plated slot width is 0.5mm"
+(rule "Plated Slot Min Width"
+    (condition "A.Pad_Type == 'Through-hole' && A.Hole_Shape == 'Oval' && A.isPlated()")
+    (constraint hole_size (min 0.5mm))
+)
+
+# Non-Plated Slot (Oval Hole) Minimum Width -> 1.0mm
+# JLCPCB: "The minimum Non-Plated Slot Width is 1.0mm"
+(rule "Non-Plated Slot Min Width"
+    (condition "A.Pad_Type == 'NPTH, mechanical' && A.Hole_Shape == 'Oval'")
+    (constraint hole_size (min 1.0mm))
+)
+
+# Castellated Holes (Half-holes)
+(rule "Castellated hole minimum"
+    (layer outer)
+    (condition "A.Type == 'pad' && A.Fabrication_Property == 'Castellated pad'")
+    (constraint hole_size (min 0.6mm))
+)
+
+# -----------------------------------------------------------------------------
+# 4. CLEARANCES (HOLE TO COPPER)
+# -----------------------------------------------------------------------------
+
+# NPTH Safety Rule (The "Dig Out" Rule)
+# Ensures 0.25mm gap between any NPTH hole and any copper (track, via, zone).
+# This prevents JLC from having to manually cut copper away.
+(rule "Copper to NPTH Hole Clearance"
+    (condition "!A.isPlated()") 
+    (constraint hole_clearance (min 0.254mm))
+)
+
+# PTH to Track Clearance
+(rule "Track to PTH Hole Clearance"
+    (condition "A.isPlated() && B.Type == 'track' && A.Net != B.Net")
+    (constraint hole_clearance (min 0.254mm))
+)
+
+# Hole to Hole Clearance (Different Nets)
+(rule "Hole to Hole (Diff Net)"
+    (condition "A.Net != B.Net")
+    (constraint hole_to_hole (min 0.5mm))
+)
+
+# Hole to Hole Clearance (Same Net)
+(rule "Hole to Hole (Same Net)"
+    (condition "A.Net == B.Net")
+    (constraint hole_to_hole (min 0.254mm))
+)
+
+# Annular Ring (Via & PTH)
+# JLC guarantees +0.15mm pad size over drill, meaning 0.075mm ring.
+(rule "Minimum Annular Ring"
+    (condition "A.isPlated()")
+    (constraint annular_width (min 0.075mm))
+)
