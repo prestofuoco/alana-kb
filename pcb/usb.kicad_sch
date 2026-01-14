@@ -1408,7 +1408,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FERRITE BEAD 120 OHM 0603 1LN"
+		(property "Description" "FERRITE BEAD 120 OHM 0805 1LN"
 			(at 138.43 83.82 0)
 			(effects
 				(font
@@ -1426,7 +1426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Product Number" "BLM18PG121SN1D"
+		(property "Manufacturer Product Number" "BLM21PG121SN1D"
 			(at 138.43 83.82 90)
 			(effects
 				(font
