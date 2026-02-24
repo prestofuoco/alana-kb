@@ -1,5 +1,5 @@
 {
-    "manufacturer": "Andre Salvador Winkel",
+    "manufacturer": "asw",
     "keyboard_name": "alana",
     "maintainer": "prestofuoco",
     "bootloader": "stm32-dfu",
@@ -26,7 +26,7 @@
         "vid": "0xFEED"
     },
     "layouts": {
-        "LAYOUT_tkl_alana": {
+        "LAYOUT_tkl_amb": {
             "layout": [
                 {"label": "Esc", "matrix": [0, 0], "x": 0, "y": 0},
                 {"label": "F1", "matrix": [0, 1], "x": 2, "y": 0},
@@ -90,7 +90,7 @@
                 {"label": "L", "matrix": [3, 9], "x": 9.75, "y": 3.25},
                 {"label": ";", "matrix": [3, 10], "x": 10.75, "y": 3.25},
                 {"label": "'", "matrix": [3, 11], "x": 11.75, "y": 3.25},
-                {"label": "Enter", "matrix": [3, 12], "x": 12.75, "y": 3.25, "w": 2.25},
+                {"label": "Enter", "matrix": [3, 13], "x": 12.75, "y": 3.25, "w": 2.25},
 
                 {"label": "Shift", "matrix": [4, 0], "x": 0, "y": 4.25, "w": 2.25},
                 {"label": "Z", "matrix": [4, 1], "x": 2.25, "y": 4.25},
@@ -104,13 +104,13 @@
                 {"label": ".", "matrix": [4, 9], "x": 10.25, "y": 4.25},
                 {"label": "/", "matrix": [4, 10], "x": 11.25, "y": 4.25},
                 {"label": "Shift", "matrix": [4, 11], "x": 12.25, "y": 4.25, "w": 2.75},
-                {"label": "Up", "matrix": [4, 16], "x": 16.25, "y": 4.25},
+                {"label": "Up", "matrix": [4, 15], "x": 16.25, "y": 4.25},
 
                 {"label": "Ctrl", "matrix": [5, 0], "x": 0, "y": 5.25, "w": 1.25},
                 {"label": "Win", "matrix": [5, 1], "x": 1.25, "y": 5.25, "w": 1.25},
                 {"label": "Alt", "matrix": [5, 2], "x": 2.5, "y": 5.25, "w": 1.25},
                 {"label": "Space 1", "matrix": [5, 3], "x": 3.75, "y": 5.25, "w": 2.75},
-                {"label": "Space 2", "matrix": [5, 8], "x": 6.5, "y": 5.25, "w": 2.25},
+                {"label": "Space 2", "matrix": [5, 6], "x": 6.5, "y": 5.25, "w": 2.25},
                 {"label": "Alt", "matrix": [5, 10], "x": 10, "y": 5.25, "w": 1.25},
                 {"label": "Win", "matrix": [5, 11], "x": 11.25, "y": 5.25, "w": 1.25},
                 {"label": "Menu", "matrix": [5, 12], "x": 12.5, "y": 5.25, "w": 1.25},

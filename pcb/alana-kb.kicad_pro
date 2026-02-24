@@ -717,7 +717,7 @@
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
+      "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -768,7 +768,7 @@
       {
         "filename": "alana-kb.kicad_sch",
         "name": "alana-kb",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "14664179-4b45-478a-8e33-e1eaac937d3d"
       }
     ],
     "used_designators": "",
@@ -777,7 +777,7 @@
   "sheets": [
     [
       "14664179-4b45-478a-8e33-e1eaac937d3d",
-      "Root"
+      "alana-kb"
     ],
     [
       "56ff7ee6-662a-45e6-a488-b9279dcd3e60",
