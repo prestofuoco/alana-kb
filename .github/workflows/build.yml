@@ -15,8 +15,11 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+<<<<<<< HEAD
         with:
           submodules: recursive
+=======
+>>>>>>> refs/remotes/origin/main
 
       - name: Install QMK CLI
         run: python3 -m pip install qmk
@@ -24,11 +27,14 @@ jobs:
       - name: Setup QMK Firmware
         run: qmk setup -y
 
+<<<<<<< HEAD
       - name: Install ARM Toolchain
         run: |
           sudo apt-get update
           sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi
 
+=======
+>>>>>>> refs/remotes/origin/main
       - name: Inject Alana Keyboard Source
         run: |
           mkdir -p ~/qmk_firmware/keyboards/alana
