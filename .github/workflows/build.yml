@@ -1,0 +1,40 @@
+name: build alana firmware
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - '.github/workflows/**'
+  pull_request:
+    paths:
+      - 'src/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install QMK CLI
+        run: python3 -m pip install qmk
+
+      - name: Setup QMK Firmware
+        run: qmk setup -y
+
+      - name: Inject Alana Keyboard Source
+        run: |
+          mkdir -p ~/qmk_firmware/keyboards/alana
+          cp -R src/* ~/qmk_firmware/keyboards/alana/
+
+      - name: Compile Firmware
+        run: |
+          cd ~/qmk_firmware
+          qmk compile -kb alana -km default
+
+      - name: Upload Firmware Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: alana_default_firmware
+          path: ~/qmk_firmware/alana_default.bin
+          if-no-files-found: error
