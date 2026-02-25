@@ -27,10 +27,10 @@ jobs:
       - name: Setup QMK Firmware
         run: qmk setup -y
 
-      - name: Install ARM Toolchain
+      - name: Install ARM Toolchain and Flash Tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi dfu-util
 
       - name: Inject Alana Keyboard Source
         run: |
