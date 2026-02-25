@@ -1,4 +1,4 @@
-name: build alana firmware
+name: Build Alana Firmware
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Using the official QMK container avoids the 30-minute download hang
     container: qmkfm/qmk_cli
     
     steps:
@@ -17,22 +16,14 @@ jobs:
 
       - name: Setup QMK and Compile
         run: |
-          # 1. Pull down the QMK firmware source
           qmk setup -y
-          
-          # 2. Inject your Alana source files into the QMK directory
-          # The container's workdir is usually /__w/alana-kb/alana-kb/
-          mkdir -p ~/qmk_firmware/keyboards/alana
-          cp -R src/* ~/qmk_firmware/keyboards/alana/
-          
-          # 3. Compile the firmware
-          cd ~/qmk_firmware
+          mkdir -p /qmk_firmware/keyboards/alana
+          cp -R src/* /qmk_firmware/keyboards/alana/
           qmk compile -kb alana -km default
 
       - name: Upload Firmware Artifact
         uses: actions/upload-artifact@v4
         with:
           name: alana_default_firmware
-          # In the container, ~/ maps to /root/
-          path: /root/qmk_firmware/alana_default.bin
+          path: /qmk_firmware/alana_default.bin
           if-no-files-found: error
